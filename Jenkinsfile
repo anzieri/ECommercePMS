@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-            jdk 'JDK21_Manual'
+            jdk 'JDK25_Manual'
     }
 
     triggers {
@@ -27,8 +27,8 @@ pipeline {
         }
         stage('Environment Check') {
                     steps {
-                        // Confirming the version is 21
                         sh 'java -version'
+                        sh 'echo $JAVA_HOME'
                     }
         }
 
