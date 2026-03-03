@@ -18,6 +18,7 @@ pipeline {
                 git branch: "${BRANCH}",
                         credentialsId: "${CREDENTIALS_ID}",
                         url: "${REPO_URL}"
+                        echo "Build triggered by GitHub webhook"
             }
         }
 
