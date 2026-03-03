@@ -31,10 +31,11 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>25</source>
-                    <target>25</target>
-                </configuration>
+                <version>3.11.0</version> <configuration>
+                <source>21</source>
+                <target>21</target>
+                <release>21</release>
+            </configuration>
             </plugin>
         </plugins>
     </build>

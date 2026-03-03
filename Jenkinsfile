@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-            jdk 'JDK-25'
+            jdk 'JDK21_Manual'
     }
 
     triggers {
@@ -24,6 +24,12 @@ pipeline {
                         url: "${REPO_URL}"
                         echo "Build triggered by GitHub webhook"
             }
+        }
+        stage('Environment Check') {
+                    steps {
+                        // Confirming the version is 21
+                        sh 'java -version'
+                    }
         }
 
         stage('Build and Test with Maven') {
