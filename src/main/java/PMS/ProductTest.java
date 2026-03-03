@@ -16,7 +16,7 @@ import java.util.List;
  * - Basic logic implemented
  */
 public class ProductTest {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         // Test scenario that might throw multiple exceptions
         try {
             Product laptop = new Electronics("E001", "Laptop", 200, 100, 5,65);
