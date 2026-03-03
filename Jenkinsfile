@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-            jdk 'JDK25_Manual'
+        jdk 'JDK25_Manual'
     }
 
     triggers {
