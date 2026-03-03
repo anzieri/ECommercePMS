@@ -52,7 +52,7 @@ pipeline {
     post {
         success {
             echo "Build and Tests successful! JAR stored in ${PROJECT_DIR}/"
-            archiveArtifacts artifacts: '${PROJECT_DIR}/*.jar', fingerprint: true
+            archiveArtifacts artifacts: "${PROJECT_DIR}/*.jar", fingerprint: true
         }
         failure {
             echo "Pipeline failed. Check the Jenkins console output to see if a JUnit test failed or if there was a compilation error."
