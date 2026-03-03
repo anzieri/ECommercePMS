@@ -30,3 +30,4 @@ bin/
 .DS_Store
 .idea
 Inventory_Management.iml
+/target/
